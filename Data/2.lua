@@ -16,6 +16,8 @@ local arathiID = 1461
 
 local exploration = L:GetCategoryByName('CATEGORY_EXPLORATION', true)
 
+local featsOfStrength = L:GetCategoryByID(99)
+
 ach = L:Achievement(pvp, 10, 'duels')
 :NameDesc('AN_DUEL', 'AD_DUEL', true)
 :Criteria(TYPE.DUELS):Build()
@@ -128,33 +130,46 @@ L:Achievement(instances, 20, 'drake_red')
 :Criteria(TYPE.SPECIAL, {1}):Build()
 :Reward('AR_LEEROY', true)
 :Build()
+:DisableInSOD()
 
 L:Achievement(raids, 20, 'drake_twilight')
 :NameDesc('AN_BWL_DUO', 'AD_BWL_DUO', true)
 :Criteria(TYPE.SPECIAL, {2}):Build()
 :Build()
+:DisableInSOD()
 
 L:Achievement(raids, 10, 'anubrekhan_without_mobs')
 :NameDesc('AN_ANUBREKHAN_WITHOUT_MOBS', 'AD_ANUBREKHAN_WITHOUT_MOBS', true)
 :Criteria(TYPE.BOSS_WITHOUT_MOBS, {15956}):Build()
 :Build()
+:DisableInSOD()
 
 L:Achievement(raids, 10, 'faerlina_without_mobs')
 :NameDesc('AN_FAERLINA_WITHOUT_MOBS', 'AD_FAERLINA_WITHOUT_MOBS', true)
 :Criteria(TYPE.BOSS_WITHOUT_MOBS, {15953}):Build()
 :Build()
+:DisableInSOD()
 
 L:Achievement(raids, 10, 'arachnophobia')
 :NameDesc('AN_ARACHNOPHOBIA', 'AD_ARACHNOPHOBIA', true)
 :Criteria(TYPE.SPECIAL, {3}):Build()
 :Build()
+:DisableInSOD()
 
 L:Achievement(raids, 10, 'four_together')
 :NameDesc('AN_FOUR_TOGETHER', 'AD_FOUR_TOGETHER', true)
 :Criteria(TYPE.SPECIAL, {4}):Build()
 :Build()
+:DisableInSOD()
 
 L:Achievement(raids, 20, 'sapphirone_with_all_alive')
 :NameDesc('AN_SAPPHIRONE_WITH_ALL_ALIVE', 'AD_SAPPHIRONE_WITH_ALL_ALIVE', true)
 :Criteria(TYPE.BOSS_WITH_ALL_ALIVE, {15989}):Build()
+:Build()
+:DisableInSOD()
+
+L:Achievement(featsOfStrength, 0, '-Inv_Helmet_47')
+:NameDesc('AN_THANKS', 'AD_THANKS', true)
+:Criteria(TYPE.SPECIAL, {5}):Build()
+:Reward('AR_THANKS', true)
 :Build()

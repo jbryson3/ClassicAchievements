@@ -17,7 +17,8 @@ SexyLib:InitLocalization('Classic Achievements', {
     GOT_ACHIEVEMENT_MESSAGE_FEMALE = 'I\'ve just earned achievement %s!',
 
     COMPARE_ACHIEVEMENTS = 'Compare achievements',
-    TARGET_DOES_NOT_HAVE_ADDON = 'Target does not have this addon installed.',
+    LOADING_TARGET_ACHIEVEMENTS = 'Loading %s\'s achievements..',
+    TARGET_DOES_NOT_HAVE_ADDON = '%s does not have this addon installed.',
 
     UPDATING_EXPLORED_AREAS = 'Updating locations exploration data. This action will take a few seconds.',
     UPDATED_EXPLORED_AREAS = '&aInformation about explored locations has been updated!',
@@ -94,8 +95,8 @@ SexyLib:InitLocalization('Classic Achievements', {
     CATEGORY_FEATS_OF_STRENGTH = 'Feats of Strength',
     CATEGORY_EVENTS = 'Game Events',
 
-    AN_LVL = '%dth level',
-    AD_LVL = 'Reach %dth level.',
+    AN_LVL = 'Level %d',
+    AD_LVL = 'Reach level %d.',
 
     AN_BANK = 'Bank cell',
     AD_BANK = 'Purchase all additional slots in the bank.',
@@ -113,14 +114,14 @@ SexyLib:InitLocalization('Classic Achievements', {
     AD_QUEST_GOLD = 'Earn %d golden coins by completing quests.',
     AC_QUEST_GOLD = 'Earned %d golden coins by completing quests.',
 
-    AN_QUESTS_ZONE = 'Wisdom of %s',
+    AN_QUESTS_ZONE = 'Wisdom Keeper of %s',
     AD_QUESTS_ZONE = 'Complete quest "%s" in %s.',
     AD_QUESTS_ZONE_MULTI = 'Complete the following quests in %s.',
-    AC_QUESTS_ZONE = 'Completed quest "%s".',
+    AC_COMPLETED_QUEST = 'Completed quest "%s".',
 
     AZSHARA_1 = 'Azshara',
     AZSHARA_2 = 'Azshara',
-    QUEST_3602 = 'Азшарит',
+    QUEST_3602 = 'Azsharite',
 
     FELWOOD_1 = 'Felwood',
     FELWOOD_2 = 'Felwood',
@@ -237,8 +238,17 @@ SexyLib:InitLocalization('Classic Achievements', {
     AD_DEAD_MINES = 'Defeat Edwin VanCleef.',
     AN_SHADOWFANG_KEEP = 'Shadowfang keep',
     AD_SHADOWFANG_KEEP = 'Defeat Archmage Arugal.',
-    AN_BLACKFATHOM_DEEPS = 'Blackfathom deeps',
+    AN_BLACKFATHOM_DEEPS = 'Blackfathom Deeps',
     AD_BLACKFATHOM_DEEPS = 'Defeat Aku\'mai.',
+    AN_BLACKFATHOM_DEEPS_RAID = 'Blackfathom Deeps',
+    AD_BLACKFATHOM_DEEPS_RAID = 'Defeat The Old Gods\' servants hiding in the Blackfathom Deeps.',
+    AC_BLACKFATHOM_DEEPS_RAID1 = 'Baron Aquanis defeated',
+    AC_BLACKFATHOM_DEEPS_RAID2 = 'Ghamoo-Ra defeated',
+    AC_BLACKFATHOM_DEEPS_RAID3 = 'Lady Sarevess defeated',
+    AC_BLACKFATHOM_DEEPS_RAID4 = 'Gelihast defeated',
+    AC_BLACKFATHOM_DEEPS_RAID5 = 'Lorgus Jett defeated',
+    AC_BLACKFATHOM_DEEPS_RAID6 = 'Twilight Lord Kelris defeated',
+    AC_BLACKFATHOM_DEEPS_RAID7 = 'Aku\'Mai defeated',
     AN_JAIL = 'The Jail',
     AD_JAIL = 'Defeat Kam Deepfury.',
     AN_GNOMREGAN = 'Gnomregan',
@@ -380,7 +390,7 @@ SexyLib:InitLocalization('Classic Achievements', {
     AD_PVP_KILLS = 'Get %d honorable kills.',
     AC_PVP_KILLS = 'Got %d honorable kills',
 
-    AN_MOB_KILLS_1 = 'Da killar',
+    AN_MOB_KILLS_1 = 'Killer',
     AN_MOB_KILLS_2 = 'Destroyer',
     AN_MOB_KILLS_3 = 'Crusher',
     AN_MOB_KILLS_4 = 'Head hunter',
@@ -483,7 +493,7 @@ SexyLib:InitLocalization('Classic Achievements', {
     AD_HORDE_RACES_KILLER = 'Get a killing blow against all Horde races.',
     AC_HUMAN_KILLED = 'Human killed',
     AC_NIGHTELF_KILLED = 'Night elf killed',
-    AC_DWARF_KILLED = 'Dward killed',
+    AC_DWARF_KILLED = 'Dwarf killed',
     AC_GNOME_KILLED = 'Gnome killed',
     AC_ORC_KILLED = 'Orc killed',
     AC_TROLL_KILLED = 'Troll killed',
@@ -722,11 +732,11 @@ SexyLib:InitLocalization('Classic Achievements', {
     AR_WB_EMERALD_DRAGONS = 'The unspoken title of Emerald keeper.',
 
     AN_DUEL = 'For the first time',
-    AD_DUEL = 'Одержите победу в своей первой дуэли.',
+    AD_DUEL = 'Win in a duel.',
     AN_DUELS_10 = 'Duelist',
     AN_DUELS_25 = 'Skilled duelist',
     AN_DUELS_100 = 'Master duelist',
-    AD_DUELS = 'Win in a duel.',
+    AD_DUELS = 'Win in %d duels.',
     AC_DUELS = 'Won in %d duels',
     AN_GURUBASHI_1 = 'Gurubashi Arena Master',
     AD_GURUBASHI_1 = 'Loot the Arena Master trinket from the Gurubashi Arena.',
@@ -736,10 +746,10 @@ SexyLib:InitLocalization('Classic Achievements', {
     AD_PARTICIPATE_IN_BGS = 'Complete %d battlegrounds at max level.',
     AC_PARTICIPATE_IN_BGS = 'Completed %d battlegrounds at max level',
 
-    EMOTE_LOVE = 'You love %s.',
+    EMOTE_LOVE1 = 'You love %s.',
     AN_LOVE = 'To All The Squirrels I\'ve Loved Before',
     AD_LOVE = 'Show the critters of Azeroth how much you /love them.',
-    EMOTE_PAT = 'You gently pat %s.',
+    EMOTE_PAT1 = 'You gently pat %s.',
     AN_ARATHI_CATS = 'Cats first, then everything else',
     AD_ARATHI_CATS = '/pat the designated felines in Arathi Basin.',
 
@@ -791,5 +801,46 @@ SexyLib:InitLocalization('Classic Achievements', {
     AN_ARACHNOPHOBIA = 'Arachnophobia',
     AD_ARACHNOPHOBIA = 'Defeat Maexxna in Naxxramas within 20 minutes of Anub\'Rekhan\'s death.',
     AN_FOUR_TOGETHER = 'And they would all go down together',
-    AD_FOUR_TOGETHER = 'Defeat the 4 Horsemen in Naxxramas, ensuring they all die within 15 seconds of each other.'
+    AD_FOUR_TOGETHER = 'Defeat the 4 Horsemen in Naxxramas, ensuring they all die within 15 seconds of each other.',
+
+    AN_THANKS = 'I\'m myself, you know, a developer',
+    AD_THANKS = 'Was especially helpful in developing, testing, translating or promoting Classic Achievements.',
+    AR_THANKS = 'Infinite gratitude :)',
+
+    AN_BFD_PEARL = 'Nature of the Void',
+    AD_BFD_PEARL = 'Complete "The Heart of the Void" quest line after defeating Aku\'Mai in Blackfathom Deeps.',
+
+    AN_BFD_STAFF = 'Rod of the Ancient Sleepwalker',
+    AD_BFD_STAFF = 'Wielder of the Rod of the Ancient Sleepwalker, an epic staff from the Blackfathom Deeps.',
+
+    AN_BFD_SWORD = 'Deadly Strike of the Hydra',
+    AD_BFD_SWORD = 'Wielder of the Deadly Strike of the Hydra, an epic sword from the Blackfathom Deeps.',
+
+    AN_BFD_CROSSBOW = 'Azshari Arbalest',
+    AD_BFD_CROSSBOW = 'Wielder of the Azshari Arbalest, an epic crossbow from the Blackfathom Deeps.',
+
+    AN_SOD_P1_PROF_EPIC = 'Void-Touched Armament',
+    AD_SOD_P1_PROF_EPIC = 'Craft any piece of void-touched gear.',
+
+    AN_SOD_RUNES_6 = 'Discoverer of Runes',
+    AD_SOD_RUNES_6 = 'Collect 6 runes for your class.',
+    AC_SOD_RUNES_6 = 'Collected 6 runes.',
+
+    AN_SOD_RUNES_12 = 'Rune Researcher',
+    AD_SOD_RUNES_12 = 'Collect 12 runes for your class.',
+    AC_SOD_RUNES_12 = 'Collected 12 runes.',
+
+    AN_SOD_REP_F = 'Waylaid Supplier',
+    AD_SOD_REP_F_A = 'Reach Friendly with Azeroth Commerce Authority.',
+    AD_SOD_REP_F_H = 'Reach Friendly with Durotar Supply and Logistics.',
+    AN_SOD_REP_H = 'Supply Authority',
+    AD_SOD_REP_H_A = 'Reach Honored with Azeroth Commerce Authority.',
+    AD_SOD_REP_H_H = 'Reach Honored with Durotar Supply and Logistics.',
+    AN_SOD_REP_R = 'Main Supplier',
+    AD_SOD_REP_R_A = 'Reach Revered with Azeroth Commerce Authority.',
+    AD_SOD_REP_R_H = 'Reach Revered with Durotar Supply and Logistics.',
+    AN_SOD_REP_E = 'The most important Supplier',
+    AD_SOD_REP_E_A = 'Reach Exalted with Azeroth Commerce Authority.',
+    AD_SOD_REP_E_H = 'Reach Exalted with Durotar Supply and Logistics.'
+
 })

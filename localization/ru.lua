@@ -18,7 +18,8 @@ SexyLib:Localization('Classic Achievements'):Add({
     GOT_ACHIEVEMENT_MESSAGE_FEMALE = 'Я получила достижение %s!',
 
     COMPARE_ACHIEVEMENTS = 'Сравнить достижения',
-    TARGET_DOES_NOT_HAVE_ADDON = 'У цели не установлен аддон.',
+    LOADING_TARGET_ACHIEVEMENTS = 'Загрузка достижений %s..',
+    TARGET_DOES_NOT_HAVE_ADDON = 'У %s не установлен аддон.',
 
     UPDATING_EXPLORED_AREAS = 'Обновляю информацию об исследованных локациях. Это займет несколько секунд.',
     UPDATED_EXPLORED_AREAS = '&aИнформация об исследованных локациях обновлена!',
@@ -95,7 +96,7 @@ SexyLib:Localization('Classic Achievements'):Add({
     CATEGORY_FEATS_OF_STRENGTH = 'Великие подвиги',
     CATEGORY_EVENTS = 'Игровые события',
 
-    AN_LVL = '%d-й уровень',
+    AN_LVL = 'Уровень %d',
     AD_LVL = 'Достигните %d-го уровня.',
 
     AN_BANK = 'Банковская ячейка',
@@ -117,7 +118,7 @@ SexyLib:Localization('Classic Achievements'):Add({
     AN_QUESTS_ZONE = 'Мудрость %s',
     AD_QUESTS_ZONE = 'Выполните задание "%s" в %s.',
     AD_QUESTS_ZONE_MULTI = 'Выполните перечисленные ниже задания в %s.',
-    AC_QUESTS_ZONE = 'Задание "%s" выполнено.',
+    AC_COMPLETED_QUEST = 'Задание "%s" выполнено.',
 
     AZSHARA_1 = 'Азшаре',
     AZSHARA_2 = 'Азшары',
@@ -381,7 +382,7 @@ SexyLib:Localization('Classic Achievements'):Add({
     AD_PVP_KILLS = 'Одержите %d почетных побед в PvP.',
     AC_PVP_KILLS = 'Одержано %d почетных побед в PvP',
 
-    AN_MOB_KILLS_1 = 'Убивца',
+    AN_MOB_KILLS_1 = 'Убийца',
     AN_MOB_KILLS_2 = 'Истребитель',
     AN_MOB_KILLS_3 = 'Крушитель',
     AN_MOB_KILLS_4 = 'Охотник за головами',
@@ -737,10 +738,10 @@ SexyLib:Localization('Classic Achievements'):Add({
     AD_PARTICIPATE_IN_BGS = 'Примите участие в %d сражениях на поле боя на максимальном уровне.',
     AC_PARTICIPATE_IN_BGS = 'Принято участие в %d сражениях на поле боя на максимальном уровне',
 
-    EMOTE_LOVE = 'Вы любите %s.',
+    EMOTE_LOVE1 = 'Вы любите %s.',
     AN_LOVE = 'Всем белочкам, которых я любил...',
     AD_LOVE = 'Выразите свою /любовь безобидным существам Азерота.',
-    EMOTE_PAT = 'Вы ласково гладите %s.',
+    EMOTE_PAT1 = 'Вы ласково гладите %s.',
     AN_ARATHI_CATS = 'Котики прежде всего',
     AD_ARATHI_CATS = '/погладьте указанных кошачьих в Низине Арати.',
 
@@ -792,6 +793,10 @@ SexyLib:Localization('Classic Achievements'):Add({
     AN_ARACHNOPHOBIA = 'Арахнофобия',
     AD_ARACHNOPHOBIA = 'Убейте Мексну в течение 20 минут после смерти Ануб\'Рекана.',
     AN_FOUR_TOGETHER = 'И все они падут, как один',
-    AD_FOUR_TOGETHER = 'Убейте 4 всадников в Наксрамасе одного за одним с интервалом не более 15 секунд.'
+    AD_FOUR_TOGETHER = 'Убейте 4 всадников в Наксрамасе одного за одним с интервалом не более 15 секунд.',
+
+    AN_THANKS = 'Я и сам, знаете ли, разработчик',
+    AD_THANKS = 'Особо помог в разработке, тестировании, переводе или продвижении Classic Achievements.',
+    AR_THANKS = 'Безграничная благодарность :)'
 
 })

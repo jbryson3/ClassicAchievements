@@ -1,4 +1,3 @@
-
 AchievementUtil = {};
 
 local CRITERIA_TYPE_ACHIEVEMENT_EARNED = 8;
@@ -42,3 +41,12 @@ function AchievementUtil.IsFeatOfStrength(achievementID)
 	local category = GetAchievementCategory(achievementID);
 	return category and AchievementUtil.IsCategoryFeatOfStrength(category) or false;
 end
+
+local achievementAlertAcquireOriginal = AchievementAlertSystem.alertFramePool.Acquire
+local function achievementAlertAcquire(...)
+	local result, new = achievementAlertAcquireOriginal(...)
+	result.Shield.Icon:SetTexCoord(0, .5, 0, .5)
+	result.Shield.Icon:SetPoint('TOPRIGHT', 1, -8)
+	return result, new
+end
+AchievementAlertSystem.alertFramePool.Acquire = achievementAlertAcquire

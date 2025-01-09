@@ -2,7 +2,7 @@
 ..\FrameXML\UI.xsd">
 	<Button name="AchievementMicroButton" inherits="MainMenuBarMicroButton" parent="UIParent">
 		<Anchors>
-			<Anchor point="BOTTOMLEFT" relativeTo="QuestLogMicroButton" relativePoint="BOTTOMRIGHT">
+			<Anchor point="BOTTOMLEFT" relativeTo="TalentMicroButton" relativePoint="BOTTOMRIGHT">
 				<Offset>
 					<AbsDimension x="-3" y="0"/>
 				</Offset>
@@ -15,7 +15,7 @@
 				self.newbieText = SexyLib:Localization('Classic Achievements'):Get('ICON_DESCRIPTION')
 			</OnLoad>
 			<OnEvent>
-				self.tooltipText = MicroButtonTooltipText(ACHIEVEMENT_BUTTON, "CLASSIC_ACHIEVEMENT")
+				self.tooltipText = MicroButtonTooltipText(ACHIEVEMENT_BUTTON, "TOGGLEACHIEVEMENT");
 			</OnEvent>
 		</Scripts>
 	</Button>

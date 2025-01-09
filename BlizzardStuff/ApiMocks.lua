@@ -28,7 +28,7 @@ function GetStatisticsCategoryList()
 end
 
 local function IsAchievementVisible(achievement, includeAll)
-    if not achievement:IsFactionValid() then return false end
+    if not achievement:IsAvailable() then return false end
     if includeAll then return true end
     local completion = cmanager:GetLocal()
     if achievement.points == 0 then return completion:IsAchievementCompleted(achievement.id) end
@@ -269,14 +269,14 @@ end
 --    GetAchievementCriteriaInfo(achievementID, criteriaIndex [, countHidden])
 function GetAchievementCriteriaInfo(achievementID, criteriaIndex)
     local achievement = db:GetAchievement(achievementID)
-    if achievement then
-        local index = 0
-        for _, criteria in pairs(achievement:GetCriterias()) do
-            index = index + 1
-            if index == criteriaIndex then return _GetAchievementCriteria(achievementID, criteria) end
-        end
+    if not achievement then return _GetAchievementCriteria() end
+    local sorted = {}
+    for _, criteria in pairs(achievement:GetCriterias()) do
+        table.insert(sorted, criteria)
     end
-    return _GetAchievementCriteria()
+    if criteriaIndex > #sorted then return _GetAchievementCriteria() end
+    table.sort(sorted, function(a, b) return a.id < b.id end)
+    return _GetAchievementCriteria(achievementID, sorted[criteriaIndex])
 end
 
 function GetAchievementCriteriaInfoByID(achievementID, criteriaID)
